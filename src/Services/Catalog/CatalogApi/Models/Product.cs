@@ -1,6 +1,4 @@
-﻿using System.Diagnostics.Contracts;
-
-namespace CatalogApi.Models
+﻿namespace CatalogApi.Models
 {
     public class Product
     {
