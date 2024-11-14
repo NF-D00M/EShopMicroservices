@@ -11,7 +11,7 @@
                 return JsonSerializer.Deserialize<ShoppingCart>(cachedBasket)!;
 
             var basket = await repository.GetBasket(UserName, cancellationToken);
-            await cache.SetStringAsync(UserName, JsonSerializer.Serialize(basket));
+            await cache.SetStringAsync(UserName, JsonSerializer.Serialize(basket), cancellationToken);
             return basket;
         }
         public async Task<ShoppingCart> StoreBasket(ShoppingCart basket, CancellationToken cancellationToken = default)
