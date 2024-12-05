@@ -9,5 +9,10 @@ global using Microsoft.AspNetCore.Builder;
 global using Microsoft.EntityFrameworkCore.ChangeTracking;
 global using Microsoft.EntityFrameworkCore.Diagnostics;
 global using OrderingDomain.Abstractions;
+global using OrderingApplication.Data;
+global using System.Reflection;
+global using Ordering.Infrastructure.Data.Interceptors;
+global using OrderingInfrastructure.Data.Interceptors;
+
 
 

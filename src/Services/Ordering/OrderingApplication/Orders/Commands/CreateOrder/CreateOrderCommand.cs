@@ -1,6 +1,4 @@
-﻿using FluentValidation;
-
-namespace OrderingApplication.Orders.Commands.CreateOrder
+﻿namespace OrderingApplication.Orders.Commands.CreateOrder
 {
     public record CreateOrderCommand(OrderDto Order)
         : ICommand<CreateOrderResult>;

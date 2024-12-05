@@ -1,6 +1,4 @@
-﻿using Ordering.Infrastructure.Data.Interceptors;
-using OrderingInfrastructure.Data.Interceptors;
-
+﻿
 namespace OrderingInfrastructure
 {
     public static class DependencyInjection
@@ -20,7 +18,7 @@ namespace OrderingInfrastructure
                 options.UseSqlServer(connectionString);
             });
 
-            //services.AddScoped<IApplicationDbContext, ApplicationDbContext>();
+            services.AddScoped<IApplicationDbContext, ApplicationDbContext>();
 
             return services;
         }

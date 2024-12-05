@@ -35,7 +35,7 @@
             return order;
         }
 
-        public void UpdateOrder(OrderName orderName, Address shippingAddress, Address billingAddress, Payment payment, OrderStatus status)
+        public void Update(OrderName orderName, Address shippingAddress, Address billingAddress, Payment payment, OrderStatus status)
         {
             OrderName = orderName;
             ShippingAddress = shippingAddress;

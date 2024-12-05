@@ -1,7 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using System.Reflection;
-
-namespace OrderingApplication
+﻿namespace OrderingApplication
 {
     public static class DependencyInjection
     {
@@ -10,6 +7,8 @@ namespace OrderingApplication
             services.AddMediatR(cfg =>
             {
                 cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
+                cfg.AddOpenBehavior(typeof(ValidationBehaviour<,>));
+                cfg.AddOpenBehavior(typeof(LoggingBehaviour<,>));   
             });
 
             return services;
