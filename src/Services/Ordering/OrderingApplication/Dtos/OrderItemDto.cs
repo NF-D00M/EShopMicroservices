@@ -1,7 +1,7 @@
 ﻿namespace OrderingApplication.Dtos
 {
     public record OrderItemDto (
-        Guid OrdeId,
+        Guid OrderId,
         Guid ProductId,
         int Quantity,
         decimal Price

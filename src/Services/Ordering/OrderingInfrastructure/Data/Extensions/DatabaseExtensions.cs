@@ -1,6 +1,6 @@
 ﻿namespace OrderingInfrastructure.Data.Extensions
 {
-    public static class DatabaseExtensions
+    public static class DatabaseExtentions
     {
         public static async Task InitialiseDatabaseAsync(this WebApplication app)
         {
@@ -17,7 +17,7 @@
         {
             await SeedCustomerAsync(context);
             await SeedProductAsync(context);
-            await SeedOrdersAndItemAsync(context);
+            await SeedOrdersWithItemsAsync(context);
         }
 
         private static async Task SeedCustomerAsync(ApplicationDbContext context)
@@ -38,7 +38,7 @@
             }
         }
 
-        private static async Task SeedOrdersAndItemAsync(ApplicationDbContext context)
+        private static async Task SeedOrdersWithItemsAsync(ApplicationDbContext context)
         {
             if (!await context.Orders.AnyAsync())
             {
