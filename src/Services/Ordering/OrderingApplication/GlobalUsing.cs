@@ -15,6 +15,11 @@ global using System.Collections.Generic;
 global using OrderingApplication.Extensions;
 global using BuildingBlocks.Pagination;
 global using FluentValidation;
+global using BuildingBlocksMessaging.Events;
+global using MassTransit;
+global using OrderingApplication.Orders.Commands.CreateOrder;
+
+
 
 
 

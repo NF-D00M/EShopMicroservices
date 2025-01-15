@@ -15,6 +15,8 @@ global using System.Text.Json;
 global using ProtoService;
 global using HealthChecks.UI.Client;
 global using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+global using BasketApi.Dtos;
+
 
 
 
